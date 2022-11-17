@@ -157,6 +157,7 @@ a.text-accent:hover, a.text-accent:focus {
 
 .text-secondary {
   color: #645F88 !important;
+  height: 50px;
 }
 
 a.text-secondary:hover, a.text-secondary:focus {
@@ -645,7 +646,7 @@ a.text-dark:hover, a.text-dark:focus {
 .btn-danger:hover,
 .btn-dark:hover {
   color: #fff;
-  background-color: #645F88;
+  background-color: #4c3cb4;
   border-color: transparent;
 }
 
@@ -1441,7 +1442,7 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 40px;
   padding-top: 6px;
   padding-bottom: 6px;
-  padding-right: 6px;
+  /* padding-right: 6px; */
 }
 
 .btn-split .fab {
