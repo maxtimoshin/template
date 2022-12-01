@@ -74,15 +74,40 @@
                         <nav aria-label="Breadcrumb">
                             <ul class="breadcrumb justify-content-center py-0 bg-transparent">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active" style="color:#fff;">Careers</li>
+                                <li class="breadcrumb-item active" style="color:#6C55F9">Careers</li>
                             </ul>
                         </nav>
-                        <h1 class="text-center" style="color:#fff;">Careers</h1>
+                        <h1 class="text-center" style="color:#6C55F9;">Careers</h1>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
+    <div class="apply-pop-up">
+        <div class="apply-content">
+            <span class="close-cross"></span>
+            <form action="" class="apply-form">
+                <span>Last job title:</span>
+                <input type="text">
+                <span>Nationalit:</span>
+                <input type="text">
+                <span>Residence location:</span>
+                <input type="text">
+                <span>Age:</span>
+                <input type="number">
+                <span>Disabilities and other needs:</span>
+                <input type="text">
+                <span>Education:</span>
+                <input type="text">
+                <span>Job experience:</span>
+                <input type="text">
+                <span>Types of visas and entry permits:</span>
+                <input type="text">
+                <button type="submit" class="submit-apply apply-button">Apply</button>
+            </form>
+        </div>
+    </div>
 
     <div class=" page-section">
         <div class="container accordion-container">
@@ -190,6 +215,10 @@
     </footer>
 
     <script>
+        const applyButtons = document.querySelectorAll('.apply-button')
+        const applyPopUp = document.querySelector('.apply-pop-up')
+        const closeCross = document.querySelector('.close-cross')
+
         var acc = document.getElementsByClassName("accordion");
         var i;
 
@@ -204,6 +233,14 @@
                 }
             });
         }
+        applyButtons.forEach(e => {
+            e.addEventListener('click', () => {
+                applyPopUp.style.display = "block"
+            })
+        })
+        closeCross.addEventListener('click', () => {
+            applyPopUp.style.display = "none"
+        })
     </script>
 
     <script src="../assets/js/jquery-3.5.1.min.js"></script>
