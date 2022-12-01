@@ -2176,14 +2176,15 @@ a.text-dark:focus {
 .accordion {
   background-color: #eee;
   border-radius: 10px;
-  color: #444;
+  color: #6C55F9;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: bold;
   transition: 0.4s;
   outline: none !important;
 }
@@ -2195,10 +2196,12 @@ a.text-dark:focus {
 
 .accordion:after {
   content: 'Learn More \002B';
-  color: #777;
+  color: #6C55F9;
   font-weight: bold;
   float: right;
   margin-left: 5px;
+  font-size:16px;
+  font-weight: 500;
 }
 
 .activem:after {
@@ -2217,5 +2220,20 @@ a.text-dark:focus {
 .careers-block {}
 
 * {
-  outline: none !important; 
+  outline: none !important;
+}
+
+.apply-button {
+  padding: 10px 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: #6C55F9;
+  border: 1px solid #6C55F9;
+  transition: all 0.3s;
+  color: #fff;
+}
+
+.apply-button:hover {
+  background: transparent;
+  color: #6C55F9;
 }
