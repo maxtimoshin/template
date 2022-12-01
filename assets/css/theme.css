@@ -2310,5 +2310,5 @@ a.text-dark:focus {
   height: 40px;
   border: 1px solid #6C55F9;
   border-radius: 5px;
-  ;
+  -webkit-appearance: none;
 }
