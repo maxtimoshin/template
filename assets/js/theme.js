@@ -35,15 +35,15 @@ $(function() {
     sticky.css('max-height', window_height + 'px');
   }
   
-  function stickyNav() {
-    scrollTop = $(window).scrollTop();
-    if (scrollTop > contentOffset) {
-      sticky.addClass('fixed');
-    }
-    else {
-      sticky.removeClass('fixed');
-    }
-  }
+  // function stickyNav() {
+  //   scrollTop = $(window).scrollTop();
+  //   if (scrollTop > contentOffset) {
+  //     sticky.addClass('fixed');
+  //   }
+  //   else {
+  //     sticky.removeClass('fixed');
+  //   }
+  // }
   
 });
 
