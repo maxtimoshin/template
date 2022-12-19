@@ -87,24 +87,44 @@
     <div class="apply-pop-up">
         <div class="apply-content">
             <span class="close-cross"></span>
-            <form action="" class="apply-form">
-                <span>Last job title:</span>
-                <input type="text">
-                <span>Nationalit:</span>
-                <input type="text">
-                <span>Residence location:</span>
-                <input type="text">
+            <form action="index.php" method="post" id="emailForm" enctype="multipart/form-data" class="apply-form">
+
+                <span>Name*:</span>
+                <input type="text" class="form-control" id="uname" name="uname" placeholder="Enter Name">
+
+                <span>Email*:</span>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+
                 <span>Age:</span>
-                <input type="number">
+                <input class="form-control" type="number" name="age" id="age"></input>
+
+                <span>Nationality:</span>
+                <input type="text" class="form-control" name="nationality" id="nationality"></input>
+
+                <span>Residence location:</span>
+                <input type="text" class="form-control" name="location" id="location"></input>
+
+                <span>Last job title:</span>
+                <textarea class="form-control" rows="3" name="lastJobTitle" id="lastJobTitle"></textarea>
+
                 <span>Disabilities and other needs:</span>
-                <input type="text">
+                <textarea class="form-control" rows="3" type="text" name="disabilities" id="disabilities"></textarea>
+
                 <span>Education:</span>
-                <input type="text">
+                <textarea class="form-control" rows="3" type="text" name="education" id="education"></textarea>
+
                 <span>Job experience:</span>
-                <input type="text">
+                <textarea class="form-control" rows="3" type="text" name="jobExperience" id="jobExperience"></textarea>
+
                 <span>Types of visas and entry permits:</span>
-                <input type="text">
-                <button type="submit" class="submit-apply apply-button">Apply</button>
+                <input type="text" class="form-control" name="visas" id="visas"></input>
+
+                <span>Attach resume (pdf)*:</span>
+                <input type="file" class="form-control file-input" id="attachFile" name="attachFile">
+
+                <button type="submit" class="btn btn-default submit-apply apply-button" name="sendEmail">Send
+                    Email</button>
+
             </form>
         </div>
     </div>
