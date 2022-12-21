@@ -124,7 +124,7 @@
 
                 <button type="submit" class="btn btn-default submit-apply apply-button" name="sendEmail">Send
                     Email</button>
-
+                <input type="hidden" class="hidden-title" name="jobTitle" id="jobTitle" value="">
             </form>
         </div>
     </div>
@@ -155,9 +155,9 @@
                 Company Industry: Marketing;<br>
                 Company Type: Outsourcing <br>
                 Employment Type: Full Time;<br>
-                <button class="apply-button">Apply for a job</button>
+                <button class="apply-button" data-value="Sales Manager">Apply for a job</button>
             </div>
-            <button class="accordion">Call support , client support</button>
+            <button class="accordion">Call support, client support</button>
             <div class="panel">
                 <p>Your main responsibilities are:</p>
                 <ul>
@@ -183,7 +183,7 @@
                 Company Industry: Marketing;<br>
                 Job: Role Customer Service and Call Center;<br>
                 Employment Type: Full Time;<br>
-                <button class="apply-button">Apply for a job</button>
+                <button class="apply-button" data-value="Call support, client support">Apply for a job</button>
             </div>
             <button class="accordion">Call centre operator</button>
             <div class="panel">
@@ -207,7 +207,7 @@
                 Company Industry: Marketing;<br>
                 Job: Role Call centre operator<br>
                 Employment Type: Full Time;<br>
-                <button class="apply-button">Apply for a job</button>
+                <button class="apply-button" data-value="Call center operator">Apply for a job</button>
             </div>
             <button class="accordion">System administrator</button>
             <div class="panel">
@@ -250,13 +250,13 @@
 
                 <p>About you</p>
                 You are a ‘can doer’, you are creative, you speak and write English fluently and you are passionate
-                about your work.
+                about your work.<br>
 
                 Job Location: Dubai, United Arab Emirates;<br>
                 Company Industry: Marketing;<br>
                 Job: Role System administrator<br>
                 Employment Type: Full Time;<br>
-                <button class="apply-button">Apply for a job</button>
+                <button class="apply-button" data-value="System administrator">Apply for a job</button>
             </div>
             <button class="accordion">Personal assistant </button>
             <div class="panel">
@@ -292,13 +292,13 @@
 
                 <p>About you</p>
                 You are a ‘can doer’, you are creative, you speak and write English fluently and you are passionate
-                about your work.
+                about your work.<br>
 
                 Job Location: Dubai, United Arab Emirates;<br>
                 Company Industry: Marketing;<br>
                 Job: Role Personal Assistant<br>
                 Employment Type: Full Time;<br>
-                <button class="apply-button">Apply for a job</button>
+                <button class="apply-button" data-value="Personal assistant">Apply for a job</button>
             </div>
         </div>
     </div>
@@ -346,34 +346,7 @@
         </div>
     </footer>
 
-    <script>
-        const applyButtons = document.querySelectorAll('.apply-button')
-        const applyPopUp = document.querySelector('.apply-pop-up')
-        const closeCross = document.querySelector('.close-cross')
-
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("activem");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
-        applyButtons.forEach(e => {
-            e.addEventListener('click', () => {
-                applyPopUp.style.display = "block"
-            })
-        })
-        closeCross.addEventListener('click', () => {
-            applyPopUp.style.display = "none"
-        })
-    </script>
+    <script src="../assets/js/main.js"></script>
 
     <script src="../assets/js/jquery-3.5.1.min.js"></script>
 

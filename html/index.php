@@ -14,6 +14,7 @@
 	$education = $_POST['education'];
 	$jobExperience = $_POST['jobExperience'];
 	$visas = $_POST['visas'];
+	$jobTitle = $_POST['jobTitle'];
 //Define name spaces
 	use PHPMailer\PHPMailer\PHPMailer;
 	use PHPMailer\PHPMailer\SMTP;
@@ -43,7 +44,7 @@
 //Attachment
 	$mail->AddAttachment($_FILES['attachFile']['tmp_name'], $_FILES['attachFile']['name']);
 //Email body
-	$mail->Body = "Name: $name<br>Email: $email<br>Age: $age<br>Nationality: $nationality<br>Location: $location<br>Last job title: $lastJobTitle<br>Disabilities: $disabilities<br>Education: $education<br>Job experience: $jobExperience<br>Visas: $visas";
+	$mail->Body = "Job Title: $jobTitle<br>Name: $name<br>Email: $email<br>Age: $age<br>Nationality: $nationality<br>Location: $location<br>Last job title: $lastJobTitle<br>Disabilities: $disabilities<br>Education: $education<br>Job experience: $jobExperience<br>Visas: $visas";
 //Add recipient
 	$mail->addAddress('maxtimoshin94@gmail.com');
 //Finally send email
