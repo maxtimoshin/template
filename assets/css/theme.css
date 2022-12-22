@@ -2354,3 +2354,8 @@ a.text-dark:focus {
     aspect-ratio: 3/2;
   }
 }
+
+.submit-apply {
+  margin:0px;
+  align-self:flex-end;
+}
