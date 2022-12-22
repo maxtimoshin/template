@@ -53,7 +53,7 @@
 	if ( $mail->send() ) {
 		echo "<div style='color:#000; flex-direction:column;gap:20px; font-size:32px; font-weight:bold; width:100%;height:100%;display:flex;align-items:center;justify-content:center;'><p>Your application has been successfully sent.</p><img style='width:100px' src=../assets/img/approve.png></img></div>";
 	}else{
-		echo "Message could not be sent. Mailer Error:";
+		echo "Something went wrong, please resubmit application.";
 	}
 //Closing smtp connection
 	$mail->smtpClose();
