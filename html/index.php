@@ -24,7 +24,8 @@
 //Set mailer to use smtp
 	$mail->isSMTP();
 //Define smtp host
-	$mail->Host = "smtp.gmail.com";
+	// $mail->Host = "smtp.gmail.com";
+	$mail->Host = "smtp-mail.outlook.com";
 //Enable smtp authentication
 	$mail->SMTPAuth = true;
 //Set smtp encryption type (ssl/tls)
@@ -32,13 +33,14 @@
 //Port to connect smtp
 	$mail->Port = "587";
 //Set gmail username
-	$mail->Username = "maxtimoshin94@gmail.com";
+	$mail->Username = "maxtimoshin94@outlook.com";
 //Set gmail password
-	$mail->Password = "sxwrpdyryuvmwkni";
+	// $mail->Password = "sxwrpdyryuvmwkni";
+	$mail->Password = "siilycifplkprltt";
 //Email subject
-	$mail->Subject = "Test email using PHPMailer";
+	$mail->Subject = "Resume apply";
 //Set sender email
-	$mail->setFrom('maxtimoshin94@gmail.com');
+	$mail->setFrom('maxtimoshin94@outlook.com');
 //Enable HTML
 	$mail->isHTML(true);
 //Attachment
@@ -49,7 +51,7 @@
 	$mail->addAddress('maxtimoshin94@gmail.com');
 //Finally send email
 	if ( $mail->send() ) {
-		echo "Email Sent..!";
+		echo "<div style='color:#000; flex-direction:column;gap:20px; font-size:32px; font-weight:bold; width:100%;height:100%;display:flex;align-items:center;justify-content:center;'><p>Your application has been successfully sent.</p><img style='width:100px' src=../assets/img/approve.png></img></div>";
 	}else{
 		echo "Message could not be sent. Mailer Error:";
 	}

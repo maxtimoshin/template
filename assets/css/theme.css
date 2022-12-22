@@ -2270,7 +2270,7 @@ a.text-dark:focus {
   width: calc(100% - 32px);
   height: fit-content;
   background: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   position: relative;
 }
 
